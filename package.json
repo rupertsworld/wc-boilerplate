@@ -9,6 +9,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "observable-element": "^0.1.14",
+    "store-thing": "^0.1.5",
+    "uhtml": "^4.5.0",
     "vite": "^5.2.8"
   }
 }
