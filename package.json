@@ -1,0 +1,14 @@
+{
+  "name": "web-boilerplate",
+  "version": "0.1.0",
+  "description": "A boilerplate template for web apps.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "vite": "^5.2.8"
+  }
+}
