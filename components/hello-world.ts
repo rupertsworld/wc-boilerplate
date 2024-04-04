@@ -1,4 +1,3 @@
-import { ObservableElement } from 'observable-element';
 import { Store } from 'store-thing';
 import { render, html } from 'uhtml';
 
@@ -7,11 +6,8 @@ const store = new Store('counter', { count: 0 }, { storage: 'local' });
 const increment = () => store.update((state) => (state.count += 1));
 const decrement = () => store.update((state) => (state.count -= 1));
 
-class HelloWorld extends ObservableElement {
-  count: number;
-
-  constructor() {
-    super();
+class HelloWorld extends HTMLElement {
+  connectedCallback() {
     store.subscribe((state) => {
       render(this, this.template(state.count));
     });
